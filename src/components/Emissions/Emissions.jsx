@@ -130,9 +130,6 @@ const Emissions = () => {
                             determining actual billing values or operational planning.
                     </p>
                 </div>
-                <div>
-                    <h1>Hello World</h1>
-                </div>
             </div>
             <Footer/>
         </div>
