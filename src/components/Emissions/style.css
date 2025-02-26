@@ -1,0 +1,205 @@
+.navbar {
+    position: fixed; /* Fix the navbar at the top */
+    top: 7.8%; 
+    left: 0;  
+    margin-top: 32px;
+    width: 100%; /* Make it span the full width of the viewport */
+    background-color: #fafafa; /* Set background color */
+    z-index: 1000; 
+    display: flex; /* Arrange links horizontally */
+    justify-content: center; /* Space out the links */
+    padding: 5px; /* Add some padding */
+}
+
+.pdf-icon{
+    padding-top: 17px;
+    margin-left: 5px;
+}
+.nav_1 {
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Set text color */
+    font-size: 16px; /* Adjust font size */
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.nav_1:hover {
+    text-decoration: none; /* Add underline on hover */
+    color: #007bff;
+}
+.nav_1:active {
+    text-decoration: none; /* Add underline on hover */
+    color: #ffffff;
+    background-color: #007BFF;
+}
+
+.overview{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.nav_1{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.gridstatus{
+    display: flex;
+    padding:10px;
+    justify-content: flex-start;
+    /* border: solid black; */
+    border: 1px solid grey ;
+    margin: 11% 10% 3% 10%;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+#details{
+    line-height: 30px;
+}
+#gs{
+    margin-left: 15px;
+}
+#nor{
+    margin-left: 10px;
+}
+.anchor{
+    margin-left: 50%;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #007BFF;
+}
+.container2{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.co2emission{
+    margin-left: 10%;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#time{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.card {
+    margin-top: 10p;
+    flex-basis: 45%;
+    margin: 10px 0;
+    max-width: 45%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; /* Align items to the top of the card */
+    align-items: center;
+    text-align: center;
+    p{
+        margin-bottom: 20px;
+    }
+}
+
+.piechart1, .linegraph1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 378px;
+    margin-bottom: 30px;
+}
+.infocircle{
+    color: #0073E6;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.resourcetrend{
+    margin-bottom: 30px;
+    p{margin-bottom: 30px;}
+}
+
+.historicalco{
+    margin-bottom: 30px;
+    p{margin-bottom: 30px;}
+
+}
+
+.box {
+    border: 1px solid #ccc; /* Add a thin border */
+    background-color: #ffffff; /* Set the background color */
+    padding: 10px; /* Optional: Add some padding inside the box */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for depth */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+.divider-line {
+    border: 1px solid #ccc; /* Add a thin border */
+    width: 100%; /* Make the line span the full width of the container */
+    margin: 16px 0; /* Optional: Add some space above and below the line */
+}
+
+.linechart2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 338px;
+}
+
+
+.linechart3{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 438px;
+}
+
+.graph1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.overview-icon-bulb, .co2, .rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.overview-large-label, .co2 p, .rate p {
+    margin-top: 10px; 
+}
+
+.lastbox {
+    background-color: #FFF6E5; /* Light yellow background */
+    border: 1px solid #FFD79B; /* Subtle border with a similar yellow shade */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 16px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+#content {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.5;
+}
+
+#boldtext {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.5;
+}
+
+#link {
+    color: #0066CC;
+    text-decoration: none;
+}

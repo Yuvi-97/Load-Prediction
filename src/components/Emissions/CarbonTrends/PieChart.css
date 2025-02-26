@@ -1,0 +1,15 @@
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-chart-legend-container {
+  margin-left: 20px; /* Adjust the spacing as needed */
+  width: 200px;      /* Set a fixed width for the legend */
+}
+
+.pie-chart-legend {
+  padding: 10px;
+}
+

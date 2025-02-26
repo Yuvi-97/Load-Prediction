@@ -1,0 +1,13 @@
+#charts-container{
+    display:flex !important;
+}
+#chart-item-1{
+    width:50%;
+    max-height:500px;
+}
+#chart-item-2{
+
+    width:48%;
+    height:550px;
+    margin-top:90px;
+}

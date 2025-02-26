@@ -1,0 +1,197 @@
+/* Reset styles */
+
+/* Main Content Layout */
+.prices__main-content {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 30px auto;
+  max-width: 1200px;
+  margin-top: 105px;
+}
+
+.prices__grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+.prices__details-section {
+  grid-column: span 12;
+  background-color: #fff;
+  padding-top: 19px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.prices__button-group {
+  margin-bottom: 20px;
+}
+
+/* Button Customization */
+.MuiButton-root {
+  color: #007bff;
+  border-color: #007bff;
+}
+
+/* Status Section */
+.prices__status-section {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.prices__status-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.prices__status-state {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.prices__info-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.prices__info-link:hover {
+  text-decoration: underline;
+}
+
+/* Map Section */
+.prices__map-section {
+  grid-column: span 8;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.prices__map-header {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.prices__map-timestamp {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.prices__map-link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 0.9rem;
+}
+
+.prices__map-link:hover {
+  text-decoration: underline;
+}
+
+.prices__map-iframe-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Details Section */
+.prices__status-section {
+  background-color: #ffffff; /* Softer background color */
+  border-radius: 12px; /* More rounded corners */
+  padding: 25px 30px; /* Larger padding for better spacing */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover */
+}
+
+.prices__status-section:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Slightly larger shadow on hover */
+  transform: translateY(-3px); /* Subtle lift effect on hover */
+}
+
+.prices__tariff-title {
+  font-size: 1.75rem; /* Larger heading */
+  color: #2b2b2b; /* Darker font for the title */
+  font-weight: 600; /* Bold font for emphasis */
+  margin-bottom: 15px; /* More space below the title */
+}
+
+.prices__info-link {
+  font-size: 1rem; /* Larger link font size */
+  color: #007bff; /* Bright link color */
+  text-decoration: underline; /* Underline the link */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.prices__info-link:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.prices__tariff-list {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* No padding */
+  margin-bottom: 20px; /* More space after the list */
+}
+
+.prices__tariff-list li {
+  font-size: 1.125rem; /* Slightly larger list items */
+  color: #333; /* Darker font color */
+  margin-bottom: 10px; /* Increase space between list items */
+  padding: 10px 15px; /* Add padding inside list items */
+  background-color: #f5f5f57c; /* White background for list items */
+  border-left: 5px solid #79b9fe; /* Add accent color to the left */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.prices__tariff-list li:hover {
+  background-color: #f0f4f8; /* Light background color on hover */
+}
+
+.prices__tariff-list strong {
+  color: #55a6fc; /* Bright color for the unit ranges */
+}
+
+.prices__tariff-notice {
+  font-size: 0.95rem; /* Adjusted font size for the notice */
+  color: #666; /* Lighter gray for notice text */
+  margin-top: 20px; /* Space above the notice */
+  padding: 15px; /* Padding inside the notice */
+  background-color: #e6e7e7; /* Light background for the notice */
+  border-left: 4px solid #ffcc00; /* Accent border to highlight the notice */
+  border-radius: 6px; /* Rounded corners */
+}
+
+
+.prices__tariff-list li {
+  font-size: 1rem;
+  margin: 5px 0; /* Spacing between items */
+  color: #555; /* Slightly lighter color */
+}
+
+.prices__tariff-notice {
+  font-size: 0.9rem;
+  color: #777; /* Even lighter color for notice */
+  margin-top: 15px; /* Space above notice */
+}
+

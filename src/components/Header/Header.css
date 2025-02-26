@@ -1,0 +1,237 @@
+/* Ensure the logo and h1 are aligned */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 59px;
+  height: 69px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #2c3e50; /* Primary text color */
+}
+
+/* Header Top */
+.header-top-left h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50; /* Primary text color */
+}
+
+.header-top-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header-top-right svg {
+  color: #1abc9c; /* Primary icon color */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-top-right svg:hover {
+  color: #16a085; /* Hover icon color */
+}
+
+.detail-icon {
+  margin-left: 15px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1002;
+  width: 200px;
+}
+
+.dropdown-menu a {
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  color: #2c3e50; /* Primary text color */
+}
+
+.dropdown-menu a:hover {
+  background-color: #1abc9c; /* Hover background */
+  color: #fff; /* Hover text color */
+}
+
+/* Main Header */
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding: 13px;
+  background-color: #ecf0f1; /* Background color */
+  font-family: 'Roboto', sans-serif;
+  height: auto;
+  width: 100%;
+}
+
+.header-left h1 {
+  font-size: 1.5rem;
+  color: #2c3e50; /* Primary text color */
+  margin: 0;
+  font-weight: 700;
+}
+
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.header-center ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.header-center a {
+  text-decoration: none;
+  color: #1abc9c; /* Primary link color */
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.header-center a::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #1abc9c; /* Primary underline color */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.1s ease;
+}
+
+.header-center a:hover::before,
+.header-center a:focus::before {
+  width: 100%;
+}
+
+.header-center a:hover {
+  text-decoration: none;
+  color: #16a085; /* Hover color for links */
+  transform: translateY(-2px);
+}
+
+.cur {
+  margin-right: 55px;
+  font-variant: small-caps;
+  font-weight: 800;
+  color: #2c3e50; /* Primary text color */
+}
+
+.header-center a:active {
+  color: #e74c3c; /* Accent color for active links */
+  transform: translateY(0);
+}
+
+.header-right .cur {
+  font-size: 1.2rem;
+  color: #666;
+  padding-left: -5px;
+}
+/* Notification Icon */
+.notification {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: -40px;
+  margin-right: 50px; /* Adjust to ensure it fits nicely with the header layout */
+}
+
+.notification-icon {
+  font-size: 1.5rem;  /* Adjust size for better visibility */
+  color: #000000; /* Icon color matching the header */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.notification-icon:hover {
+  color: #1abc9c; /* Hover color for the notification icon */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px; /* Adjust this value so it aligns well with the icon */
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 9999; /* High z-index to ensure it's above other fixed elements */
+  width: 150px;
+}
+
+
+.dropdown-menu a {
+  margin: 0;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #1abc9c;
+  color: #fff;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .header {
+    top: 100px; /* Adjusted for new header */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-center ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-center li {
+    margin: 5px 0;
+  }
+}

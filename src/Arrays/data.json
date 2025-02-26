@@ -1,0 +1,202 @@
+[
+    {
+        "year": 2018,
+        "domestic": 15348,
+        "nonDomestic": 7573,
+        "industrial": 3442,
+        "agricultural": 33,
+        "publicUtilities": 1952,
+        "others": 582,
+        "total": 28930
+    },
+    {
+        "year": 2019,
+        "domestic": 12174,
+        "nonDomestic": 5946,
+        "industrial": 1880,
+        "agricultural": 61,
+        "publicUtilities": 837,
+        "others": 184,
+        "total": 20082
+    },
+    {
+        "year": 2022,
+        "domestic": 18578,
+        "nonDomestic": 6964,
+        "industrial": 3046,
+        "agricultural": 45,
+        "publicUtilities": 1529,
+        "others": 480,
+        "total": 27642
+    },
+    {
+        "year": 2023,
+        "domestic": 13198,
+        "nonDomestic": 5732,
+        "industrial": 1843,
+        "agricultural": 63,
+        "publicUtilities": 732,
+        "others": 181,
+        "total": 21749
+    },
+    {
+        "year": 2024,
+        "domestic": 13855,
+        "nonDomestic": 5890,
+        "industrial": 2155,
+        "agricultural": 49,
+        "publicUtilities": 1085,
+        "others": 219,
+        "total": 22253
+    },
+    {
+        "year": 2025,
+        "domestic": 14512,
+        "nonDomestic": 6048,
+        "industrial": 2467,
+        "agricultural": 54,
+        "publicUtilities": 1438,
+        "others": 256,
+        "total": 23775
+    },
+    {
+        "year": 2026,
+        "domestic": 15169,
+        "nonDomestic": 6206,
+        "industrial": 2779,
+        "agricultural": 59,
+        "publicUtilities": 1791,
+        "others": 293,
+        "total": 25297
+    },
+    {
+        "year": 2027,
+        "domestic": 15826,
+        "nonDomestic": 6364,
+        "industrial": 3091,
+        "agricultural": 64,
+        "publicUtilities": 2144,
+        "others": 330,
+        "total": 26819
+    },
+    {
+        "year": 2028,
+        "domestic": 16483,
+        "nonDomestic": 6522,
+        "industrial": 3403,
+        "agricultural": 69,
+        "publicUtilities": 2497,
+        "others": 367,
+        "total": 28341
+    },
+    {
+        "year": 2030,
+        "domestic": 17797,
+        "nonDomestic": 6838,
+        "industrial": 4027,
+        "agricultural": 79,
+        "publicUtilities": 3203,
+        "others": 441,
+        "total": 31385
+    },
+    {
+        "year": 2031,
+        "domestic": 18454,
+        "nonDomestic": 6996,
+        "industrial": 4339,
+        "agricultural": 84,
+        "publicUtilities": 3556,
+        "others": 478,
+        "total": 32907
+    },
+    {
+        "year": 2032,
+        "domestic": 19111,
+        "nonDomestic": 7154,
+        "industrial": 4651,
+        "agricultural": 89,
+        "publicUtilities": 3909,
+        "others": 515,
+        "total": 34429
+    },
+    {
+        "year": 2033,
+        "domestic": 19768,
+        "nonDomestic": 7312,
+        "industrial": 4963,
+        "agricultural": 94,
+        "publicUtilities": 4262,
+        "others": 552,
+        "total": 35951
+    },
+    {
+        "year": 2034,
+        "domestic": 20425,
+        "nonDomestic": 7470,
+        "industrial": 5275,
+        "agricultural": 99,
+        "publicUtilities": 4615,
+        "others": 589,
+        "total": 37473
+    },
+    {
+        "year": 2035,
+        "domestic": 21082,
+        "nonDomestic": 7628,
+        "industrial": 5587,
+        "agricultural": 104,
+        "publicUtilities": 4968,
+        "others": 626,
+        "total": 38995
+    },
+    {
+        "year": 2036,
+        "domestic": 21739,
+        "nonDomestic": 7786,
+        "industrial": 5899,
+        "agricultural": 109,
+        "publicUtilities": 5321,
+        "others": 663,
+        "total": 40517
+    },
+    {
+        "year": 2037,
+        "domestic": 22396,
+        "nonDomestic": 7944,
+        "industrial": 6211,
+        "agricultural": 114,
+        "publicUtilities": 5674,
+        "others": 700,
+        "total": 42039
+    },
+    {
+        "year": 2038,
+        "domestic": 23053,
+        "nonDomestic": 8102,
+        "industrial": 6523,
+        "agricultural": 119,
+        "publicUtilities": 6027,
+        "others": 737,
+        "total": 43561
+    },
+    {
+        "year": 2039,
+        "domestic": 23710,
+        "nonDomestic": 8260,
+        "industrial": 6835,
+        "agricultural": 124,
+        "publicUtilities": 6380,
+        "others": 774,
+        "total": 45083
+    },
+    {
+        "year": 2040,
+        "domestic": 24367,
+        "nonDomestic": 8418,
+        "industrial": 7147,
+        "agricultural": 129,
+        "publicUtilities": 6733,
+        "others": 811,
+        "total": 46605
+    }
+]

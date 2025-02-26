@@ -1,0 +1,591 @@
+/* DemandPage.css */
+html {
+  scroll-behavior: smooth;
+}
+
+.image-slider {
+  position: relative;
+  margin-top: 128px;
+  width: 100%; /* You can adjust the size of the slider */
+  height: 250px;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.9s ease-in-out;
+  width: 100%;
+}
+
+.slider-image {
+  min-width: 100%;
+  height: 250px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.114);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.indicator {
+  width: 5px;
+  height: 5px;
+  background-color: #bbb;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #fff;
+}
+/* Basic page styling */
+.demand-page {
+    font-family: 'Roboto', sans-serif;
+}
+  
+  /* Header styling */
+  .heade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    width: 900px;
+    height: 40px;
+    margin-left: 17%;
+    margin-top: 150px;
+    border-radius: 8px;
+  }
+  
+  .header-left h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .status-normal {
+    color: #28a745; /* Green color for normal status */
+  }
+  
+  .learn-more {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+  
+  .learn-more:hover {
+    color: #0056b3;
+  }
+  
+  .pdf-icon img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  /* Category navigation styling */
+  .category-nav {
+    position: fixed; /* Makes the nav fixed on the screen */
+    top: 61px; /* Positions it at the top of the page */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Makes it span the full width of the viewport */
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    z-index: 1000; /* Ensures it stays on top of other elements */
+  }  
+  
+  
+  .category-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; /* Space between items */
+    justify-content: center;
+  }
+  
+  .category-nav li {
+    display: inline;
+  }
+  
+  .category-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 4px 18px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .category-nav a:hover {
+    color: #007bff;
+  }
+
+  .category-nav a.active {
+    color: #ffffff;
+    background-color: #007BFF;
+  } 
+  
+  .category-nav a:active {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .pdf-icon {
+    color: #ff0000; /* Red color for PDF icon */
+    transition: color 0.3s ease;
+  }
+  
+  .pdf-icon:hover {
+    color: #d00000; /* Darker red on hover */
+  }
+  
+  /* Section styling */
+  section {
+    /* margin: 20px; */
+    padding: 20px;
+    background-color: #ffffff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    h2{
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  /* Example for all sections */
+section {
+  position: relative; /* Ensure positioning context */
+}
+
+section::before {
+  content: "";
+  display: block;
+  height: 70px; /* Height of the offset */
+  /* Negative margin to pull the element up */
+  visibility: hidden; /* Make the pseudo-element invisible */
+}
+
+.curr{
+  margin-left:30px ;
+  margin-right:30px ;
+}
+
+  /* Container Styling */
+.demand-trend-bx {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px 50px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+/* Navigation Bar Styling */
+.demand-trend-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Menu Items Styling */
+.demand-trend-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Space between menu items */
+}
+
+.demand-trend-menu-item select {
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.demand-trend-menu-item select:hover {
+  border-color: #007bff; /* Change border color on hover */
+}
+.demand-trend-menu-item select:active {
+  border-color: #007bff; /* Change border color on hover */
+}
+
+/* Info Icon Styling */
+.info-icon {
+  color: #000000;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.info-icon:hover {
+  color: #333;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 300px;
+  background-color: #ffffff; /* Updated to match the page background */
+  border-left: 1px solid #ddd; /* Subtle border to match the page theme */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  z-index: 1000;
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+}
+
+/* Close Button Styling */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px; /* Increased size for better visibility */
+  color: #333; /* Dark color to match the theme */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+  color: #007bff; /* Change to match theme hover color */
+}
+
+/* Sidebar Content Styling */
+.sidebar-content {
+  margin-top: 40px; /* Adjusted to fit with sidebar header */
+  color: #333; /* Dark color for readability */
+}
+
+
+/* Info Icon Styling */
+.info-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; /* Slightly larger for better visibility */
+  color: #333; /* Dark color to match the theme */
+  transition: color 0.2s ease;
+}
+
+.info-icon:hover {
+  color: #007bff; /* Hover color to match the theme */
+}
+
+/* Optional: Add a smooth transition effect if the sidebar appears/disappears */
+.sidebar.closed {
+  right: -300px; /* Hide the sidebar off-screen when closed */
+}
+
+
+
+/* Graph Content Styling */
+.graph-content {
+  padding-top: 15px;
+}
+.bxdrop{
+  margin-top: -0px;
+  margin-bottom: 45px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 5px;
+  padding: 18px 40px 18px 40px;
+  text-align:start;
+  background-color:rgb(227, 241, 255) ;
+  border-left: 5px solid rgb(0, 128, 255);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .demand-trend-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .demand-trend-menu {
+    gap: 10px; /* Adjust space between items for smaller screens */
+  }
+}
+
+
+  /* DemandPage.css */
+  .overview-capacity-chart {
+    width: 100%;
+    height: 22px;
+    background: #01212D;
+    /* box-shadow: inset 0 0 20px rgba(0, 0, 0, .5); */
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 7px 0;
+    border: none;
+}
+.overview-capacity-chart {
+    display: flex;
+    width: 90%;
+    gap: 0px;
+    margin-left: 25px;
+  }
+  
+  .capacity-chart-bar {
+    height: auto; /* Height of the bar */
+  }
+
+  .capacity-chart-bar {
+    height: auto; /* Height of the bar */
+    transition: width 0.5s ease; /* Animate width changes */
+  }
+  
+  .capacity-chart-bar.green {
+    background-color: #0e561f; /* Green */
+  }
+  
+  .capacity-chart-bar.orange {
+    background-color: #f0b459; /* Orange */
+  }
+  
+  .capacity-chart-bar.gray {
+    background-color: #9e9e9e; /* Gray */
+  }
+/* Main container for capacity chart labels */
+.capacity-chart-labels-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 8px; /* Reduced margin for compactness */
+    padding: 15px; /* Reduced padding for compactness */
+    padding-left: 75px;
+  }
+  
+  /* General styles for each label section */
+  .capacity-chart-labels {
+    flex: 1;
+    padding: 5px; /* Reduced padding */
+    margin-right: 5px; /* Small gap between labels */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #f7f7f7; /* Light background color for each label section */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .capacity-chart-label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px; /* Reduced margin */
+    font-size: 0.85rem; /* Smaller font size for compactness */
+  }
+  
+  /* Colorful capacity names */
+  .capacity-name {
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue color for capacity names */
+    margin-bottom: 2px; /* Small margin for spacing */
+  }
+  
+  /* Capacity numbers */
+  .capacity-number {
+    font-size: 0.8rem; /* Smaller font size */
+    color: #34495e; /* Slightly lighter dark blue for numbers */
+    margin-top: 2px; /* Small margin for spacing */
+  }
+  
+  /* Specific label styles for different capacity types */
+  .label-current-demand {
+    border-left: 4px solid #34db5e; /* Blue border for current demand */
+    padding-left: 8px; /* Small padding for visual spacing */
+  }
+  
+  .label-available-capacity-1-4hour {
+    border-left: 4px solid #e67e22; /* Orange border for available capacity */
+    padding-left: 8px; /* Small padding for visual spacing */
+  }
+  
+  .label-reserves {
+    margin-top: 5px; /* Small margin for spacing */
+    border-left: 4px solid #95a5a6; /* Gray border for reserves */
+    padding-left: 8px; /* Small padding for visual spacing */
+    font-size: 0.75rem; /* Even smaller font for reserves section */
+    color: #7f8c8d; /* Lighter gray for reserves text */
+  }
+
+  .leftbl{
+    width: 45%;
+    padding-left: 30px;
+    padding-top: 80px;
+    border-right: 1px solid rgb(231, 231, 231);
+    padding-bottom: 55px;
+  }
+
+  /* Flex utilities */
+  .d-flex {
+    display: flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .justify-content-between {
+    justify-content: space-between;
+  }
+  
+  .mt-2 {
+    margin-top: 0.5rem;
+  }
+  
+  .me-0 {
+    margin-right: 0;
+  }
+  .slsl{
+    padding-bottom: 30px;
+  }
+
+  /* Container for data blocks */
+  .data-blocks-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to fit smaller screens */
+    gap: 40px; /* Space between blocks */
+    margin-top: 0px;
+    margin-left: 40px;
+    justify-content: start; /* Center blocks */
+  }
+  
+  /* Individual data block styling */
+  .data-block {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) */
+    flex: 1 1 calc(25% - 20px); /* Responsive width: adjusts based on container */
+    max-width: 175px; /* Maximum width for each block */
+    min-width: 100px; /* Minimum width for each block */
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hover effects */
+  }
+  
+  .icon {
+    margin-top: 10px; /* Space between the text content and icon */
+    color: #666; /* Darker color for the icon */
+  }
+  
+  .data-content h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.8em; /* Adjust as needed */
+  }
+  
+  .data-content p {
+    margin: 5px 0; /* Add margin for spacing */
+    font-size: 1em; /* Adjust as needed */
+    font-weight: bold;
+  }
+  
+  
+  /* Icon styling */
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Data content styling */
+  .data-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .data-content p {
+    margin: 5px 0 0;
+    font-size: 0.7rem;
+    color: #666;
+  }  
+  .slsl{
+    display: flex;
+  }
+  section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  section p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-right {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px; /* Adjust spacing */
+    }
+  
+    .category-nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .category-nav li {
+      margin: 5px 0; /* Adjust spacing for smaller screens */
+    }
+  }
