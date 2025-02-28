@@ -51,8 +51,9 @@ const Header = () => {
           <Link to='/supply'>Supply</Link>
           <Link to='/emission'>Emission</Link>
           <Link to='/prices'>Prices</Link>
-          <Link to='/map'>Map</Link>
+          <Link to="/aidashboard" >Optimization</Link>
           <Link to='/barchart'>Sectors</Link>
+          {/* <Link to='/map'>Map</Link> */}
 
         </ul>
       </nav>

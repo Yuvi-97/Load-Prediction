@@ -6,7 +6,7 @@ import './Footer.css'; // Import your CSS file for styling
 const Footer = () => {
   return (
     <footer className="footer">
-        <h2>Delhi Load</h2>
+        <h2>Kerala Load</h2>
       <div className="footer-container">
         <div className="footer-section">
           <h4>About</h4>
@@ -23,7 +23,6 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Related Websites</h4>
           <ul>
-            <li><a href="#oasis"><AiOutlineAppstore /> OASIS</a></li>
             <li><a href="#market-participant-portal"><AiOutlineAppstore /> Market Participant Portal</a></li>
             <li><a href="#western-energy-markets"><AiOutlineAppstore /> Western Energy Markets</a></li>
             <li><a href="#weim-portal"><AiOutlineAppstore /> WEIM Portal</a></li>
@@ -57,7 +56,7 @@ const Footer = () => {
           <a href="https://facebook.com/DelhiGov" target="_blank" rel="noopener noreferrer"><FaFacebook /> Facebook</a>
           <a href="https://youtube.com/DelhiGov" target="_blank" rel="noopener noreferrer"><FaYoutube /> YouTube</a>
         </div>
-        <p>&copy; 2024 Delhi Government. All rights reserved.</p>
+        <p>&copy; 2025 Kerala Government. All rights reserved.</p>
         <div className="footer-links">
           <a href="#glossary">Glossary</a> | <a href="#sitemap">Sitemap</a> | <a href="#privacy-terms">Privacy and Terms of Use v1.0.3</a>
         </div>
