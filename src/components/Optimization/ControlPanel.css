@@ -1,0 +1,52 @@
+.control-container {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .dropdowns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .shift-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .shift-btn:hover {
+    background: #218838;
+  }
+  
+  .status-container {
+    text-align: center;
+  }
+  .list
+  {
+    list-style-type: none;
+    text-align: left;
+  }
+  .status-columns {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .status-left, .status-right {
+    flex: 1;
+  }
+  

@@ -14,10 +14,13 @@ const Demand = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State to control sidebar visibility
   const [activeChart, setActiveChart] = useState('resourceAdequacyTrend');
   const images = [
-    'https://www.india.gov.in/sites/upload_files/npi/files/pm-suryaghar_0.jpg',
     'https://media.gettyimages.com/id/1244355897/photo/new-delhi-india-a-general-view-of-connaught-place-covered-with-smog-due-to-air-pollution.jpg?s=612x612&w=0&k=20&c=qTsz5n4nmy4XcpwmxxPRQEKpHtnpKRyNKwtFMRgvpUg=',
-    'https://www.india.gov.in/sites/upload_files/npi/files/Swachhata_Hi_Seva_2024.jpg',
-    'https://powermin.gov.in/sites/default/files/styles/slider_1024x422/public/UJALA1.png?itok=YGftv199',
+    'https://4.bp.blogspot.com/-zLVONAqvLVs/WnfkgEyOWpI/AAAAAAAAAHM/2Iwz1JJVi-MaFfQO1Scuuhd-wkwzcb6BgCLcBGAs/s1600/Kumarakom.jpg',
+    'https://www.adanienergysolutions.com/-/media/Project/Transmission/Banner/thumbnail_PPP-9_1.jpg?la=en&hash=88C0F60B1AF295EDCF8823AFB67CDBBB%27',
+     `https://myxyla.com/wp-content/uploads/2023/08/energy-utilities-1024x536.jpg`,
+    // 'https://media.gettyimages.com/id/1244355897/photo/new-delhi-india-a-general-view-of-connaught-place-covered-with-smog-due-to-air-pollution.jpg?s=612x612&w=0&k=20&c=qTsz5n4nmy4XcpwmxxPRQEKpHtnpKRyNKwtFMRgvpUg=',
+    // 'https://www.india.gov.in/sites/upload_files/npi/files/Swachhata_Hi_Seva_2024.jpg',
+    // 'https://powermin.gov.in/sites/default/files/styles/slider_1024x422/public/UJALA1.png?itok=YGftv199',
     // 'https://powermin.gov.in/sites/default/files/styles/slider_1024x422/public/One_Nation_One_Grid_1.png?itok=SZ8Sprk-',
     // 'https://powermin.gov.in/sites/default/files/styles/slider_1024x422/public/Power_for_All_0.png?itok=QxT4R90b',
     // 'https://power.delhi.gov.in/sites/default/files/styles/home_banner/public/power/banner-images/department_of_power_web_banner.png?itok=UYQrzxvB',
