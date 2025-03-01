@@ -74,7 +74,7 @@ const AIOptimization = ({ feeders, setFeeders }) => {
 
       <div className="results">
         {suggestions.length > 0 && (
-          <div className="box">
+          <div className="boxai">
             <h3>✅ Load Adjustments</h3>
             <ul>{suggestions.map((s, index) => <li key={index}>{s}</li>)}</ul>
           </div>

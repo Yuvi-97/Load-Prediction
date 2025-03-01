@@ -46,8 +46,8 @@ const Header = () => {
       </div>
       <nav className="header-center">
         <ul>
-          <Link to='/'>Demand</Link>
-          <Link to='http://localhost:3000/'>Prediction</Link>
+          <Link to='/demand'>Demand</Link>
+          <Link to='#'>Prediction</Link>
           <Link to='/supply'>Supply</Link>
           <Link to='/emission'>Emission</Link>
           <Link to='/prices'>Prices</Link>

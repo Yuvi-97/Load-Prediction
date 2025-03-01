@@ -128,6 +128,7 @@ a:hover{
 }
 
 .box {
+    height: fit-content;
     border: 1px solid #ccc; /* Add a thin border */
     background-color: #ffffff; /* Set the background color */
     padding: 10px; /* Optional: Add some padding inside the box */

@@ -13,6 +13,7 @@ import LoginPage from "./components/LoginPage/LoginPage";
 import SubscriptionPopup from "./components/Subscription/SubscriptionPopup";
 import AIDashboard from "./components/Optimization/AIDashboard";
 import Chatbot from "./components/ChatBot/Chatbot";// Import Chatbot
+import Login from "./components/LoginPage/LoginPage";
 
 function AppContent() {
   const location = useLocation();
@@ -31,7 +32,8 @@ function AppContent() {
       {showPopup && <SubscriptionPopup onClose={() => setShowPopup(false)} />}
 
       <Routes>
-        <Route path="/" element={<Demand />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/demand" element={<Demand />} />
         <Route path="/k" element={<Dashboard />} />
         <Route path="/l" element={<LoginPage />} />
         <Route path="/supply" element={<DashboardSupply />} />
